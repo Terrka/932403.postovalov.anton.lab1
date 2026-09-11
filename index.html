@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Кулинар и фуд-блогер</title>
 
         <style>
@@ -11,10 +13,23 @@
                 padding: 0px;
             }
             header{
+                position: relative;
                 text-align: center;
-                padding: 5px;
+                padding: 15px;
                 background-color: #8b4a32;
                 color: #fffaf5;
+            }
+            header img{
+                position: absolute;
+                left: calc(50% - 230px);
+                top: 50%;
+                transform: translateY(-50%);
+
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 5px solid #c47a5a;
             }
             main{
                 color: #4a2c20;
@@ -29,12 +44,13 @@
                 background-color: #fff8ef;
                 gap: 30px;
                 padding: 10px;
-                margin: 5px;
+                padding-right: 30px;
+                margin-bottom: 20px;
                 border-radius: 20px;
             }
             aside{
                 margin-left: auto;
-                width: 250px;
+                width: 200px;
                 background-color: #e8c5a8;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -82,14 +98,20 @@
                 align-items: flex-start;
             }
 
-
         </style>
     </head>
 
     <body>
         <header>
-            <h1>Постовалов</h1>
-            <p>Кулинар и фуд-блогер</p>
+            <img
+            src="images/avatar.png"
+            alt="Аватар владельца страницы"
+            width="120"
+            height="120">
+            <div>
+                <h1>Постовалов</h1>
+                <p>Кулинар и фуд-блогер</p>
+            </div>
         </header>
 
         <main>
