@@ -1,12 +1,150 @@
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <title>Кулинар и фуд-блогер</title>
+
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f5eadb;
+                margin: 0px;
+                padding: 0px;
+            }
+            header{
+                text-align: center;
+                padding: 5px;
+                background-color: #8b4a32;
+                color: #fffaf5;
+            }
+            main{
+                color: #4a2c20;
+                max-width: 1000px;
+                margin: 30px auto;
+                padding: 0 20px;
+            }
+            main h2{
+                color: #8b4a32;
+            }
+            section{
+                background-color: #fff8ef;
+                gap: 30px;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 20px;
+            }
+            aside{
+                margin-left: auto;
+                width: 250px;
+                background-color: #e8c5a8;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 20px;
+            }
+            aside h2{
+                color: #633522;
+            }
+            form{
+                padding: 20px;
+                border-radius: 10px;
+            }
+            input,
+            textarea {
+                background-color: #fffaf5;
+                border: 1px solid #c49a83;
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+            button{
+                background-color: #8b4a32;
+                color: #fffaf5;
+                padding: 10px 30px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            footer{
+                background-color: #4a2c20;
+                color: #fffaf5;
+                padding: 15px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            .form{
+                display: flex;
+                gap: 20px;
+                align-items: flex-start;
+            }
+
+
+        </style>
     </head>
 
     <body>
         <header>
             <h1>Постовалов</h1>
-            <h2>Кулинар и фуд-блогер</h2>
+            <p>Кулинар и фуд-блогер</p>
         </header>
+
+        <main>
+            <div class="content">
+                <div class="section">
+                    <section>
+                        <h2>Навыки</h2>
+                        <ul>
+                            <li>Приготовление блюд азиатской кухни</li>
+                            <li>Создание и оформление рецептов</li>
+                            <li>Фотографирование еды</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Блюда</h2>
+                        <ol>
+                            <li>Рамен</li>
+                            <li>Кимчи</li>
+                            <li>Том-ям</li>
+                        </ol>
+                    </section>
+                </div>
+                
+                <aside>
+                    <h2>Любимые ингридиенты</h2>
+                    <p>Лапша</p>
+                    <p>Яйца</p>
+                    <p>Мясо</p>
+                    <p>Зелень</p>
+                </aside>
+            </div>
+
+            <div class="form">
+                <section>
+                    <h2>Обратная связь</h2>
+                    <form>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше Имя" required>
+
+                        <label for="name">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Введите ваш Email" required>
+
+                        <label for="name">Сообщение:</label>
+                        <textarea type="message" id="message" rows ="5" name="message" placeholder="Введите ваше сообщение" required></textarea>
+
+                        <button type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div>
+        
+        </main>
+        
+        <footer> <!-- Нижняя часть страницы -->
+            <p>&copy; 2026 Постовалов</p>
+        </footer>
     </body>
 </html>
