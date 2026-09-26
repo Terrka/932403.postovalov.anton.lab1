@@ -74,6 +74,19 @@ aside {
     border-radius: 20px;
 }
 
+aside a{
+    color: var(--color-header-darker);
+    font-weight: bold;
+}
+
+aside a:hover{
+    color: var(--color-text-accent);
+}
+
+aside a:visited {
+    color: var(--color-text-dark);
+}
+
 aside h2 {
     color: var(--color-header-darker);
 }
